@@ -22,7 +22,10 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/alg-logo.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/alg-logo.png" />
       </Head>
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+        <div id="modal-root"></div>
+      </body>
     </html>
   );
 }
