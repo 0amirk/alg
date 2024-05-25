@@ -1,9 +1,11 @@
 export default function Requirements() {
   return (
-    <section className="bg-[#161a1e] px-4 pt-36 sm:px-12 md:px-20 md:pb-12 lg:px-28">
+    <section className="bg-[#161a1e] px-6 pt-36 sm:px-12 md:px-20 md:pb-12 lg:px-28">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <div className="bg-[#FFFFFF] p-6 rounded-lg">
-          <h2 className="mb-4 text-3xl font-bold text-black">Requirements</h2>
+          <h2 className="mb-4 text-2xl font-bold text-black md:text-3xl">
+            Requirements
+          </h2>
           <p className="mb-1 font-semibold text-gray-600">Minimum:</p>
           <ul className="mb-4 text-gray-600 list-disc list-inside">
             <li>
@@ -19,7 +21,7 @@ export default function Requirements() {
             </li>
           </ul>
           <p className="mb-1 font-semibold text-gray-600">
-            <strong>Recommended (Themed Edition):</strong>
+            Recommended (Themed Edition):
           </p>
           <ul className="text-gray-600 list-disc list-inside">
             <li>
@@ -33,7 +35,9 @@ export default function Requirements() {
           </ul>
         </div>
         <div className="bg-[#9c89d1] p-6 rounded-lg">
-          <h2 className="mb-4 text-3xl font-bold">General Instructions</h2>
+          <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+            General Instructions
+          </h2>
           <p className="mb-1 font-semibold text-white">Make Bootable USB:</p>
           <ul className="mb-4 text-white list-disc list-inside">
             <li>
