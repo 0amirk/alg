@@ -1,9 +1,18 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [navOpen, setNavOpen] = useState(false);
+  const burgerClick = () => {
+    setNavOpen(!navOpen);
+    console.log("GG");
+  };
+
   return (
     <section className="absolute w-full mt-8">
+      {navOpen && <div className="bg-white">test</div>}
       <div className="flex justify-center">
         <div className="flex justify-between items-center px-8 py-4 rounded-full w-[80%] bg-white">
           <Link href="/">
@@ -21,7 +30,10 @@ export default function Navbar() {
               </div>
             </div>
           </Link>
-          <div className="flex items-center gap-4">
+          <button onClick={burgerClick} className="md:hidden">
+            <Image src="/hamburger.svg" height={40} width={40} />
+          </button>
+          <div className="items-center hidden gap-4 md:flex">
             <a
               href="https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUPcmlja3JvbGwgbm8gYWRz"
               className="hover:text-[#6a45d1]"

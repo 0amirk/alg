@@ -16,9 +16,33 @@ export default function Footer() {
               className=""
             />
           </a>
-          <img src="discord.svg" alt="Discord" className="w-7 h-7" />
-          <img src="telegram.svg" alt="Telegram" className="w-7 h-7" />
-          <img src="instagram.svg" alt="Instagram" className="w-6 h-6" />
+          <a href="https://github.com/">
+            <Image
+              src="/discord.svg"
+              width={28}
+              height={28}
+              alt="github.com"
+              className=""
+            />
+          </a>{" "}
+          <a href="https://github.com/">
+            <Image
+              src="/telegram.svg"
+              width={28}
+              height={28}
+              alt="github.com"
+              className=""
+            />
+          </a>{" "}
+          <a href="https://github.com/">
+            <Image
+              src="/instagram.svg"
+              width={24}
+              height={24}
+              alt="github.com"
+              className=""
+            />
+          </a>
         </div>
 
         <a
