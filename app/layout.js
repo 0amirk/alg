@@ -1,14 +1,13 @@
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import "../public/alg-logo.png";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 export const metadata = {
   title: "ALG",
-  description: "ALG"
+  description: "ALG",
 };
 
 export default function RootLayout({ children }) {

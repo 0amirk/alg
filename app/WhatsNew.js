@@ -1,4 +1,9 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+
 export default function WhatsNew() {
   return (
     <section className="px-6 py-6 text-black bg-white md:py-10 sm:px-12 md:px-20 lg:px-28 ">
@@ -8,7 +13,7 @@ export default function WhatsNew() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
           fermentum orci eu tellus maximus, ac aliquet turpis mollis.
         </p>
-        <div className="flex gap-4">
+        <div className="hidden gap-4 md:flex">
           <div className="flex flex-col items-center justify-center gap-6 rounded-2xl border-opacity-10 border-b-2 border-r-2 border-l-2 border-[#9ca3af]">
             <Image
               src="/xfce.png"
@@ -43,6 +48,65 @@ export default function WhatsNew() {
             </p>
           </div>
         </div>
+        <div className="md:hidden max-w-[300px] sm:max-w-[500px]">
+          <Splide
+            options={{
+              interval: 3000,
+              rewind: true,
+              autoplay: true,
+              arrows: true,
+              pagination: false,
+              perPage: 1,
+              drag: false,
+            }}
+          >
+            <SplideSlide>
+              <div className="flex flex-col items-center justify-center gap-6 rounded-2xl border-opacity-10 border-b-2 border-r-2 border-l-2 border-[#9ca3af]">
+                <Image
+                  src="/xfce.png"
+                  width={400}
+                  height={400}
+                  className="rounded-xl"
+                />
+                <p className="text-xl font-bold max-w-[400px] text-center p-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="flex flex-col items-center justify-center gap-6 rounded-2xl border-opacity-10 border-b-2 border-r-2 border-l-2 border-[#9ca3af]">
+                <Image
+                  src="/xfce.png"
+                  width={400}
+                  height={400}
+                  className="rounded-xl"
+                />
+                <p className="text-xl font-bold max-w-[400px] text-center p-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </SplideSlide>
+            <SplideSlide>
+              <div className="flex flex-col items-center justify-center gap-6 rounded-2xl border-opacity-10 border-b-2 border-r-2 border-l-2 border-[#9ca3af]">
+                <Image
+                  src="/xfce.png"
+                  width={400}
+                  height={400}
+                  className="rounded-xl"
+                />
+                <p className="text-xl font-bold max-w-[400px] text-center p-4">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </SplideSlide>
+          </Splide>
+        </div>
+        <Link
+          href="/downloads"
+          className="px-4 py-2 text-xl md:px-8 md:py-3 bg-[#161a1e] rounded-full text-white mt-10 md:text-2xl"
+        >
+          Downloads
+        </Link>
       </div>
     </section>
   );
