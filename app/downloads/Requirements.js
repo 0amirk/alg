@@ -49,7 +49,7 @@ export default function Requirements() {
               Watch tutorials on the Tutorials page for installation guide.
             </li>
             <li>Dual/Multi Boot: Watch these videos.</li>
-            <li>Don't forget to verify your download.</li>
+            <li>Don`t forget to verify your download.</li>
             <li>Optionally, view full changelog.</li>
           </ul>
         </div>
