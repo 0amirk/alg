@@ -8,7 +8,6 @@ export default function Navbar() {
   const [navOpen, setNavOpen] = useState(false);
   const burgerClick = () => {
     setNavOpen(!navOpen);
-    console.log("GG");
   };
 
   return (
@@ -52,7 +51,7 @@ export default function Navbar() {
       <div className="flex justify-center">
         <div className="flex justify-between items-center px-8 py-4 rounded-full w-[80%] bg-white">
           <Link href="/">
-            <div className="flex items-center gap-1">
+            <div className="items-center hidden gap-1 md:flex">
               <Image
                 src="/alg-logo.png"
                 width={40}
@@ -65,9 +64,22 @@ export default function Navbar() {
                 <p className="text-[25px]">G</p>
               </div>
             </div>
+            <div className="flex items-center gap-1 md:hidden">
+              <Image
+                src="/alg-logo.png"
+                width={35}
+                height={35}
+                alt="ALG Logo"
+              />
+              <div className="flex font-bold">
+                <p className="text-[20px]">A</p>
+                <p className="text-[20px] text-[#6a45d1]">L</p>
+                <p className="text-[20px]">G</p>
+              </div>
+            </div>
           </Link>
           <button onClick={burgerClick} className="md:hidden">
-            <Image src="/hamburger.svg" height={40} width={40} />
+            <Image src="/hamburger.svg" height={30} width={30} />
           </button>
           <div className="items-center hidden gap-4 md:flex">
             <a
