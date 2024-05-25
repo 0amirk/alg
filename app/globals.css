@@ -40,3 +40,13 @@
 .no-scroll {
   overflow: hidden;
 }
+
+.rotate-180 {
+  transform: scaleX(-1);
+  transition: transform 0.3s ease;
+}
+
+.rotate-0 {
+  transform: scaleX(1);
+  transition: transform 0.3s ease;
+}

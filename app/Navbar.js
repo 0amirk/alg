@@ -72,13 +72,16 @@ export default function Navbar() {
                 alt="ALG Logo"
               />
               <div className="flex font-bold">
-                <p className="text-[20px]">A</p>
-                <p className="text-[20px] text-[#6a45d1]">L</p>
-                <p className="text-[20px]">G</p>
+                <p className="text-[22px]">A</p>
+                <p className="text-[22px] text-[#6a45d1]">L</p>
+                <p className="text-[22px]">G</p>
               </div>
             </div>
           </Link>
-          <button onClick={burgerClick} className="md:hidden">
+          <button
+            onClick={burgerClick}
+            className={`md:hidden ${navOpen ? "rotate-180" : "rotate-0"}`}
+          >
             <Image src="/hamburger.svg" height={30} width={30} />
           </button>
           <div className="items-center hidden gap-4 md:flex">
