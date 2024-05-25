@@ -50,3 +50,7 @@
   transform: scaleX(1);
   transition: transform 0.3s ease;
 }
+
+.splide__pagination__page {
+  background-color: #6a45d1 !important;
+}
