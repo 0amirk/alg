@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="bg-[#161a1e] text-white py-8">
       <div className="container flex items-center justify-between px-4 mx-auto">
-        <div className="text-[12px] md:text-sm">Copyright&copy; ALG Team</div>
+        <div className="text-[12px] md:text-sm">Copyright &copy; ALG Team</div>
 
         <div className="flex items-center justify-center space-x-4 md:space-x-8">
           <a href="https://github.com/" target="_blank">
