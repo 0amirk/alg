@@ -34,7 +34,7 @@ export default function Flavours() {
           </p>
           <div className="flex items-center text-center rounded-lg md:hidden">
             <img
-              src={isThemedKDE ? "plasma.png" : "gnome.jpg"}
+              src={isThemedKDE ? "plasma-pure.png" : "plasma.png"}
               alt="KDE Plasma"
               className="mx-auto rounded-lg"
             />
@@ -68,7 +68,7 @@ export default function Flavours() {
         </div>
         <div className="items-center hidden p-6 text-center rounded-lg md:flex">
           <img
-            src={isThemedKDE ? "plasma.png" : "gnome.jpg"}
+            src={isThemedKDE ? "plasma-pure.png" : "plasma.png"}
             alt="KDE Plasma"
             className="mx-auto rounded-lg "
           />
@@ -78,9 +78,9 @@ export default function Flavours() {
       <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-60-40">
         <div className="hidden p-6 text-center rounded-lg md:block">
           <img
-            src={isThemedGnome ? "gnome.jpg" : "plasma.png"}
+            src={isThemedGnome ? "gnome-pure.png" : "gnome.jpg"}
             alt="GNOME"
-            className="mx-auto mb-4 rounded-lg"
+            className="mx-auto mb-4 rounded-lg w-[99%]"
           />
         </div>
         <div className="flex flex-col justify-center p-3 rounded-lg md:p-6">
@@ -95,7 +95,7 @@ export default function Flavours() {
           </p>
           <div className="text-center rounded-lg">
             <img
-              src={isThemedGnome ? "gnome.jpg" : "plasma.png"}
+              src={isThemedGnome ? "gnome-pure.png" : "gnome.jpg"}
               alt="GNOME"
               className="mx-auto mb-4 rounded-lg md:hidden"
             />
@@ -141,7 +141,7 @@ export default function Flavours() {
           </p>
           <div className="flex items-center text-center rounded-lg md:hidden">
             <img
-              src={isThemedXfce ? "xfce.png" : "plasma.png"}
+              src={isThemedXfce ? "xfce-pure.png" : "xfce.png"}
               alt="XFCE"
               className="mx-auto rounded-lg"
             />
@@ -174,11 +174,18 @@ export default function Flavours() {
         </div>
         <div className="items-center hidden p-6 text-center rounded-lg md:flex">
           <img
-            src={isThemedXfce ? "xfce.png" : "plasma.png"}
+            src={isThemedXfce ? "xfce-pure.png" : "xfce.png"}
             alt="XFCE"
             className="mx-auto rounded-lg"
           />
         </div>
+      </div>
+      <div className="flex justify-center mt-12">
+        <button className="py-2 px-8 text-white border-4 border-[#6a45d1] rounded-full transition-all hover:bg-[#6a45d1] hover:text-white">
+          <a href="https://sourceforge.net/projects/arch-linux-gui/files/experimental-editions" target="_blank">
+            Experimental Editions
+          </a>
+        </button>
       </div>
     </section>
   );
