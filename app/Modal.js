@@ -23,17 +23,23 @@ export default function Modal({ onClose, children }) {
     };
   }, [onClose]);
 
+  useEffect(() => {
+    document.body.classList.add("no-scroll");
+    return () => {
+      document.body.classList.remove("no-scroll");
+    };
+  }, []);
   return (
-    <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
+    <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-full transition-opacity duration-300 ease-in-out bg-black bg-opacity-50">
       <div className="bg-white rounded-lg p-6 max-w-md w-[80%] mx-4 md:mx-0">
         {children}
         <button
-          className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+          className="absolute text-gray-500 top-4 right-4 hover:text-gray-700"
           onClick={onClose}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="w-6 h-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

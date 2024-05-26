@@ -22,7 +22,7 @@ export default function Hero() {
         <h2 className="mb-5 text-5xl font-bold text-center text-white md:text-7xl">
           ARKA <span className="text-[#6a45d1]">LINUX</span> GUI
         </h2>
-        <p className="mb-5 text-xl font-bold text-[#d4d4d4] text-center">
+        <p className="mb-5 text-xl font-semibold md:font-bold text-black md:text-[#d4d4d4] text-center">
           ALG is a fast, offline graphical installer for Arch Linux!
         </p>
         <button

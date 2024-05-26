@@ -32,30 +32,28 @@ export default function Flavours() {
             all the necessary software and settings to help users get started
             quickly.
           </p>
-          <div className="flex items-center justify-center space-x-2 mt-6 md: mb-4">
-            <span className="text-white font-bold">Pure</span>
-            <button
-              onClick={() => 
-                setIsThemedKDE(!isThemedKDE)
-              }
-              className={`${
-                !isThemedKDE ? 'bg-[#6a45d1]' : 'bg-gray-400'
-              } w-14 h-8 rounded-full relative`}
-            >
-              <span
-                className={`${
-                  !isThemedKDE ? 'translate-x-3' : '-translate-x-3'
-                } inline-block w-6 mt-1 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300`}
-              />
-            </button> 
-            <span className="text-white font-bold">Themed</span>
-          </div>
           <div className="flex items-center text-center rounded-lg md:hidden">
             <img
               src="plasma.png"
               alt="KDE Plasma"
               className="mx-auto rounded-lg"
             />
+          </div>
+          <div className="flex items-center justify-center mt-6 mb-4 space-x-2 md:">
+            <span className="font-bold text-white">Pure</span>
+            <button
+              onClick={() => setIsThemedKDE(!isThemedKDE)}
+              className={`${
+                !isThemedKDE ? "bg-[#6a45d1]" : "bg-gray-400"
+              } w-14 h-8 rounded-full relative`}
+            >
+              <span
+                className={`${
+                  !isThemedKDE ? "translate-x-3" : "-translate-x-3"
+                } inline-block w-6 mt-1 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300`}
+              />
+            </button>
+            <span className="font-bold text-white">Themed</span>
           </div>
           <div className="flex justify-center mt-6">
             <a
@@ -95,30 +93,28 @@ export default function Flavours() {
             ready to use. It comes with all the necessary software and settings
             to help users get started quickly.
           </p>
-          <div className="flex items-center justify-center space-x-2 mt-6 md: mb-4">
-            <span className="text-white font-bold">Pure</span>
-            <button
-              onClick={() => 
-                setIsThemedGnome(!isThemedGnome)
-              }
-              className={`${
-                !isThemedGnome ? 'bg-[#6a45d1]' : 'bg-gray-400'
-              } w-14 h-8 rounded-full relative`}
-            >
-              <span
-                className={`${
-                  !isThemedGnome ? 'translate-x-3' : '-translate-x-3'
-                } inline-block w-6 mt-1 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300`}
-              />
-            </button> 
-            <span className="text-white font-bold">Themed</span>
-          </div>
           <div className="text-center rounded-lg">
             <img
               src="gnome.jpg"
               alt="GNOME"
               className="mx-auto mb-4 rounded-lg md:hidden"
             />
+          </div>
+          <div className="flex items-center justify-center mt-6 mb-4 space-x-2 md:">
+            <span className="font-bold text-white">Pure</span>
+            <button
+              onClick={() => setIsThemedGnome(!isThemedGnome)}
+              className={`${
+                !isThemedGnome ? "bg-[#6a45d1]" : "bg-gray-400"
+              } w-14 h-8 rounded-full relative`}
+            >
+              <span
+                className={`${
+                  !isThemedGnome ? "translate-x-3" : "-translate-x-3"
+                } inline-block w-6 mt-1 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300`}
+              />
+            </button>
+            <span className="font-bold text-white">Themed</span>
           </div>
           <div className="flex justify-center mt-6">
             <a
@@ -143,26 +139,24 @@ export default function Flavours() {
             ready to use. It comes with all the necessary software and settings
             to help users get started quickly.
           </p>
-          <div className="flex items-center justify-center space-x-2 mt-6 md: mb-4">
-            <span className="text-white font-bold">Pure</span>
+          <div className="flex items-center text-center rounded-lg md:hidden">
+            <img src="xfce.png" alt="XFCE" className="mx-auto rounded-lg" />
+          </div>
+          <div className="flex items-center justify-center mt-6 mb-4 space-x-2 md:">
+            <span className="font-bold text-white">Pure</span>
             <button
-              onClick={() => 
-                setIsThemedXfce(!isThemedXfce)
-              }
+              onClick={() => setIsThemedXfce(!isThemedXfce)}
               className={`${
-                !isThemedXfce ? 'bg-[#6a45d1]' : 'bg-gray-400'
+                !isThemedXfce ? "bg-[#6a45d1]" : "bg-gray-400"
               } w-14 h-8 rounded-full relative`}
             >
               <span
                 className={`${
-                  !isThemedXfce ? 'translate-x-3' : '-translate-x-3'
+                  !isThemedXfce ? "translate-x-3" : "-translate-x-3"
                 } inline-block w-6 mt-1 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300`}
               />
-            </button> 
-            <span className="text-white font-bold">Themed</span>
-          </div>
-          <div className="flex items-center text-center rounded-lg md:hidden">
-            <img src="xfce.png" alt="XFCE" className="mx-auto rounded-lg" />
+            </button>
+            <span className="font-bold text-white">Themed</span>
           </div>
           <div className="flex justify-center mt-6">
             <a
