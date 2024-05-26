@@ -34,7 +34,7 @@ export default function Flavours() {
           </p>
           <div className="flex items-center text-center rounded-lg md:hidden">
             <img
-              src="plasma.png"
+              src={isThemedKDE ? "plasma.png" : "gnome.jpg"}
               alt="KDE Plasma"
               className="mx-auto rounded-lg"
             />
@@ -68,7 +68,7 @@ export default function Flavours() {
         </div>
         <div className="items-center hidden p-6 text-center rounded-lg md:flex">
           <img
-            src="plasma.png"
+            src={isThemedKDE ? "plasma.png" : "gnome.jpg"}
             alt="KDE Plasma"
             className="mx-auto rounded-lg "
           />
@@ -78,7 +78,7 @@ export default function Flavours() {
       <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-60-40">
         <div className="hidden p-6 text-center rounded-lg md:block">
           <img
-            src="gnome.jpg"
+            src={isThemedGnome ? "gnome.jpg" : "plasma.png"}
             alt="GNOME"
             className="mx-auto mb-4 rounded-lg"
           />
@@ -95,7 +95,7 @@ export default function Flavours() {
           </p>
           <div className="text-center rounded-lg">
             <img
-              src="gnome.jpg"
+              src={isThemedGnome ? "gnome.jpg" : "plasma.png"}
               alt="GNOME"
               className="mx-auto mb-4 rounded-lg md:hidden"
             />
@@ -140,7 +140,11 @@ export default function Flavours() {
             to help users get started quickly.
           </p>
           <div className="flex items-center text-center rounded-lg md:hidden">
-            <img src="xfce.png" alt="XFCE" className="mx-auto rounded-lg" />
+            <img
+              src={isThemedXfce ? "xfce.png" : "plasma.png"}
+              alt="XFCE"
+              className="mx-auto rounded-lg"
+            />
           </div>
           <div className="flex items-center justify-center mt-6 mb-4 space-x-2 md:">
             <span className="font-bold text-white">Pure</span>
@@ -169,7 +173,11 @@ export default function Flavours() {
           </div>
         </div>
         <div className="items-center hidden p-6 text-center rounded-lg md:flex">
-          <img src="xfce.png" alt="XFCE" className="mx-auto rounded-lg" />
+          <img
+            src={isThemedXfce ? "xfce.png" : "plasma.png"}
+            alt="XFCE"
+            className="mx-auto rounded-lg"
+          />
         </div>
       </div>
     </section>
