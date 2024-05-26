@@ -26,7 +26,7 @@ export default function Flavours() {
             KDE Plasma
           </h2>
           <p className="mb-4 leading-relaxed text-gray-400 md:text-lg">
-            The Plasma Themed Edition (also known as the Flagship) of Arch Linux
+            The Plasma Themed Edition (also known as the Flagship) of Arka Linux
             GUI helps you install Vanilla Arch Linux with the KDE Plasma Desktop
             Environment. It is pre-configured and ready to use. It comes with
             all the necessary software and settings to help users get started
@@ -88,7 +88,7 @@ export default function Flavours() {
             GNOME
           </h2>
           <p className="mb-4 leading-relaxed text-gray-400 md:text-lg">
-            The GNOME Edition of Arch Linux GUI helps you install Vanilla Arch
+            The GNOME Edition of Arka Linux GUI helps you install Vanilla Arch
             Linux with the GNOME Desktop Environment. It is pre-configured and
             ready to use. It comes with all the necessary software and settings
             to help users get started quickly.
@@ -134,7 +134,7 @@ export default function Flavours() {
             XFCE
           </h2>
           <p className="mb-4 leading-relaxed text-gray-400 md:text-lg">
-            The XFCE Edition of Arch Linux GUI helps you install Vanilla Arch
+            The XFCE Edition of Arka Linux GUI helps you install Vanilla Arch
             Linux with the XFCE Desktop Environment. It is pre-configured and
             ready to use. It comes with all the necessary software and settings
             to help users get started quickly.

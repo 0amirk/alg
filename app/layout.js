@@ -1,12 +1,11 @@
 "use client"
-import { Inter, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import "../public/alg-logo.png";
 import { ScrollProvider } from "./scrollContext";
 import { useEffect, useState } from "react";
 import Loader from "./loader";
 
-const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 
