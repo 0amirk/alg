@@ -14,28 +14,32 @@ export default function Navbar() {
     <section className="absolute w-full mt-8">
       {navOpen && (
         <Modal onClose={burgerClick}>
-          <div className="flex flex-col items-center justify-center gap-4">
+          <div className="flex flex-col text-lg font-bold items-center justify-center gap-4">
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUPcmlja3JvbGwgbm8gYWRz"
+              href="https://arch-linux-gui.github.io/web/tutorials/index.html"
               className="hover:text-[#6a45d1]"
+              target="_blank"
             >
               Tutorials
             </a>
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUPcmlja3JvbGwgbm8gYWRz"
+              href="https://discord.com/invite/NgAFEw9Tkf"
               className="hover:text-[#6a45d1]"
+              target="_blank"
             >
               Support
             </a>
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUPcmlja3JvbGwgbm8gYWRz"
+              href="https://sourceforge.net/projects/arch-linux-gui/"
               className="hover:text-[#6a45d1]"
+              target="_blank"
             >
               Sourceforge
             </a>
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUPcmlja3JvbGwgbm8gYWRz"
+              href="https://osdn.net/projects/arch-linux-gui/"
               className="hover:text-[#6a45d1]"
+              target="_blank"
             >
               OSDN
             </a>
@@ -84,28 +88,32 @@ export default function Navbar() {
           >
             <Image src="/hamburger.svg" height={30} width={30} />
           </button>
-          <div className="items-center hidden gap-4 md:flex">
+          <div className="items-center text-lg font-bold hidden gap-4 md:flex">
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUPcmlja3JvbGwgbm8gYWRz"
+              href="https://arch-linux-gui.github.io/web/tutorials/index.html"
               className="hover:text-[#6a45d1]"
+              target="_blank"
             >
               Tutorials
             </a>
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUPcmlja3JvbGwgbm8gYWRz"
+              href="https://discord.com/invite/NgAFEw9Tkf"
               className="hover:text-[#6a45d1]"
+              target="_blank"
             >
               Support
             </a>
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUPcmlja3JvbGwgbm8gYWRz"
+              href="https://sourceforge.net/projects/arch-linux-gui/"
               className="hover:text-[#6a45d1]"
+              target="_blank"
             >
               Sourceforge
             </a>
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0&pp=ygUPcmlja3JvbGwgbm8gYWRz"
+              href="https://osdn.net/projects/arch-linux-gui/"
               className="hover:text-[#6a45d1]"
+              target="_blank"
             >
               OSDN
             </a>

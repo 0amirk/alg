@@ -1,9 +1,18 @@
+"use client";
+import { useScroll } from "./scrollContext";
 import Image from "next/image";
 
 export default function Hero() {
+  const { whatsNewRef } = useScroll();
+
+  const handleKnowMoreClick = () => {
+    if (whatsNewRef.current) {
+      whatsNewRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
-      className="bg-[#161a1e] text-white pt-36  px-6 sm:px-12 md:px-20 lg:px-28 bg-cover bg-center bg-no-repeat"
+      className="bg-[#161a1e] text-white pt-36 px-6 sm:px-12 md:px-20 lg:px-28 bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: 'url("/background.png")',
         imageRendering: "pixelated",
@@ -16,7 +25,10 @@ export default function Hero() {
         <p className="mb-5 text-xl font-bold text-[#d4d4d4] text-center">
           ALG is a fast, offline graphical installer for Arch Linux!
         </p>
-        <button className="mb-10 py-3 bg-[#6a45d1] rounded-full px-14">
+        <button
+          className="mb-10 py-3 bg-[#6a45d1] rounded-full px-14"
+          onClick={handleKnowMoreClick}
+        >
           Know more
         </button>
         <div className="w-[100%] relative">
