@@ -12,7 +12,7 @@ export default function Footer() {
               src="/github.svg"
               width={24}
               height={24}
-              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" 
+              className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
               alt="Github"
             />
           </a>

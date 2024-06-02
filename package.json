@@ -12,7 +12,7 @@
     "@nextui-org/switch": "^2.0.28",
     "@splidejs/react-splide": "^0.7.12",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.2.6",
+    "framer-motion": "^11.2.10",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",

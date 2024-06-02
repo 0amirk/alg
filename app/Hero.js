@@ -26,7 +26,7 @@ export default function Hero() {
           ALG is a fast, offline graphical installer for Arch Linux!
         </p>
         <button
-          className="mb-10 py-3 bg-[#6a45d1] rounded-full px-14"
+          className="mb-10 py-3 bg-[#6a45d1] rounded-full px-14 hover:bg-[#7554d1] transition duration-300"
           onClick={handleKnowMoreClick}
         >
           Know more
