@@ -58,28 +58,20 @@ export default function Navbar() {
             <div className="items-center hidden gap-1 md:flex">
               <Image
                 src="/alg-logo.png"
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 alt="ALG Logo"
+                className="bg-gray-900 rounded-full"
               />
-              <div className="flex font-bold">
-                <p className="text-[25px]">A</p>
-                <p className="text-[25px] text-[#6a45d1]">L</p>
-                <p className="text-[25px]">G</p>
-              </div>
             </div>
             <div className="flex items-center gap-1 md:hidden">
               <Image
                 src="/alg-logo.png"
-                width={35}
-                height={35}
+                width={45}
+                height={45}
                 alt="ALG Logo"
+                className="bg-gray-900 rounded-full"
               />
-              <div className="flex font-bold">
-                <p className="text-[22px]">A</p>
-                <p className="text-[22px] text-[#6a45d1]">L</p>
-                <p className="text-[22px]">G</p>
-              </div>
             </div>
           </Link>
           <button
@@ -89,11 +81,7 @@ export default function Navbar() {
             <Image src="/hamburger.svg" height={30} width={30} />
           </button>
           <div className="items-center text-lg font-bold hidden gap-4 md:flex">
-            <a
-              href="https://arch-linux-gui.github.io/web/tutorials/index.html"
-              className="hover:text-[#6a45d1]"
-              target="_blank"
-            >
+            <a href="/tutorials" className="hover:text-[#6a45d1]">
               Tutorials
             </a>
             <a
