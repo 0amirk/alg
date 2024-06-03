@@ -111,7 +111,7 @@ export default function Flavours() {
               Download
             </button>
             {dropdownVisibleKDE && (
-              <div className="absolute top-full bg-white rounded shadow-lg">
+              <div className="absolute mt-2 top-full bg-white rounded shadow-lg">
                 <a
                   href={
                     isThemedKDE
@@ -207,7 +207,7 @@ export default function Flavours() {
               Download
             </button>
             {dropdownVisibleGNOME && (
-              <div className="absolute top-full bg-white rounded shadow-lg">
+              <div className="absolute mt-2 top-full bg-white rounded shadow-lg">
                 <a
                   href={
                     isThemedGnome
@@ -296,7 +296,7 @@ export default function Flavours() {
               /> */}
             </button>
             {dropdownVisibleXFCE && (
-              <div className="absolute top-full bg-white rounded shadow-lg">
+              <div className="absolute mt-2 top-full bg-white rounded shadow-lg">
                 <a
                   href={
                     isThemedXfce
@@ -337,6 +337,16 @@ export default function Flavours() {
             className="mx-auto rounded-lg"
           />
         </div>
+      </div>
+      <div className="flex justify-center mt-12">
+        <button className="py-2 px-8 text-white border-4 border-[#6a45d1] rounded-full transition-all hover:bg-[#6a45d1] hover:text-white">
+          <a
+            href="https://sourceforge.net/projects/arch-linux-gui/files/experimental-editions"
+            target="_blank"
+          >
+            Experimental Editions
+          </a>
+        </button>
       </div>
     </section>
   );
