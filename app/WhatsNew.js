@@ -9,7 +9,10 @@ export default function WhatsNew() {
   const { whatsNewRef } = useScroll();
 
   return (
-    <section ref={whatsNewRef} className="px-6 py-6 text-black bg-white md:py-10 sm:px-12 md:px-20 lg:px-28">
+    <section
+      ref={whatsNewRef}
+      className="px-6 py-6 text-black bg-white md:py-10 sm:px-12 md:px-20 lg:px-28"
+    >
       <div className="flex flex-col items-center justify-center">
         <p className="mb-4 text-3xl font-bold md:text-5xl">What&#39;s New?</p>
         <p className="max-w-xl mb-10 text-center md:text-xl">
@@ -23,6 +26,7 @@ export default function WhatsNew() {
               width={400}
               height={400}
               className="rounded-xl"
+              alt="Nothing"
             />
             <p className="text-xl font-bold max-w-[400px] text-center p-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -34,6 +38,7 @@ export default function WhatsNew() {
               width={400}
               height={400}
               className="rounded-xl"
+              alt="Nothing"
             />
             <p className="text-xl font-bold max-w-[400px] text-center p-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -45,6 +50,7 @@ export default function WhatsNew() {
               width={400}
               height={400}
               className="rounded-xl"
+              alt="Nothing"
             />
             <p className="text-xl font-bold max-w-[400px] text-center p-4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -70,6 +76,7 @@ export default function WhatsNew() {
                   width={500}
                   height={500}
                   className="rounded-xl"
+                  alt="Nothing"
                 />
                 <p className="text-xl font-bold max-w-[400px] text-center p-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -83,6 +90,7 @@ export default function WhatsNew() {
                   width={500}
                   height={500}
                   className="rounded-xl"
+                  alt="Nothing"
                 />
                 <p className="text-xl font-bold max-w-[400px] text-center p-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -96,6 +104,7 @@ export default function WhatsNew() {
                   width={500}
                   height={500}
                   className="rounded-xl"
+                  alt="Nothing"
                 />
                 <p className="text-xl font-bold max-w-[400px] text-center p-4">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

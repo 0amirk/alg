@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Flavours() {
   const [isThemedKDE, setIsThemedKDE] = useState(true);
@@ -33,7 +34,7 @@ export default function Flavours() {
             quickly.
           </p>
           <div className="flex items-center text-center rounded-lg md:hidden">
-            <img
+            <Image
               src={isThemedKDE ? "plasma-pure.png" : "plasma.png"}
               alt="KDE Plasma"
               className="mx-auto rounded-lg"
@@ -67,7 +68,7 @@ export default function Flavours() {
           </div>
         </div>
         <div className="items-center hidden p-6 text-center rounded-lg md:flex">
-          <img
+          <Image
             src={isThemedKDE ? "plasma-pure.png" : "plasma.png"}
             alt="KDE Plasma"
             className="mx-auto rounded-lg "
@@ -77,7 +78,7 @@ export default function Flavours() {
 
       <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-60-40">
         <div className="hidden p-6 text-center rounded-lg md:block">
-          <img
+          <Image
             src={isThemedGnome ? "gnome-pure.png" : "gnome.jpg"}
             alt="GNOME"
             className="mx-auto mb-4 rounded-lg w-[99%]"
@@ -94,7 +95,7 @@ export default function Flavours() {
             to help users get started quickly.
           </p>
           <div className="text-center rounded-lg">
-            <img
+            <Image
               src={isThemedGnome ? "gnome-pure.png" : "gnome.jpg"}
               alt="GNOME"
               className="mx-auto mb-4 rounded-lg md:hidden"
@@ -140,7 +141,7 @@ export default function Flavours() {
             to help users get started quickly.
           </p>
           <div className="flex items-center text-center rounded-lg md:hidden">
-            <img
+            <Image
               src={isThemedXfce ? "xfce-pure.png" : "xfce.png"}
               alt="XFCE"
               className="mx-auto rounded-lg"
@@ -173,7 +174,7 @@ export default function Flavours() {
           </div>
         </div>
         <div className="items-center hidden p-6 text-center rounded-lg md:flex">
-          <img
+          <Image
             src={isThemedXfce ? "xfce-pure.png" : "xfce.png"}
             alt="XFCE"
             className="mx-auto rounded-lg"
@@ -182,7 +183,10 @@ export default function Flavours() {
       </div>
       <div className="flex justify-center mt-12">
         <button className="py-2 px-8 text-white border-4 border-[#6a45d1] rounded-full transition-all hover:bg-[#6a45d1] hover:text-white">
-          <a href="https://sourceforge.net/projects/arch-linux-gui/files/experimental-editions" target="_blank">
+          <a
+            href="https://sourceforge.net/projects/arch-linux-gui/files/experimental-editions"
+            target="_blank"
+          >
             Experimental Editions
           </a>
         </button>

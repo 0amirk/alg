@@ -78,7 +78,7 @@ export default function Navbar() {
             onClick={burgerClick}
             className={`md:hidden ${navOpen ? "rotate-180" : "rotate-0"}`}
           >
-            <Image src="/hamburger.svg" height={30} width={30} />
+            <Image src="/hamburger.svg" height={30} width={30} alt="Nothing" />
           </button>
           <div className="items-center text-lg font-bold hidden gap-4 md:flex">
             <a href="/tutorials" className="hover:text-[#6a45d1]">

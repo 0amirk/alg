@@ -37,6 +37,7 @@ export default function Hero() {
             width={1920}
             height={1080}
             className="rounded-tl-xl rounded-tr-xl"
+            alt="Arka Linux GUI"
           />
         </div>
       </div>
